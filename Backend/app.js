@@ -9,7 +9,7 @@ const app = express();
 // deafult browser block request coming from different origin(domain,port or protocol) but cors help to overcome this  later modify it for particular domain
 app.use(cors());
 
-app.get('/',(req,res)=>{
+app.get('/modified',(req,res)=>{
     res.send('Hello world');
 })
 
